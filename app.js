@@ -1,8 +1,7 @@
 const DATA_PATHS = {
-  preguntas: 'data/preguntas.csv',
-  respuestas: 'data/respuestas_estudiantes.csv',
-  resultados: 'data/resultados.csv',
-  cohorte: 'data/cohorte_ficticia.csv'
+  preguntas: "https://raw.githubusercontent.com/proyectiapreu/recopilacion2026II/refs/heads/main/data/preguntas.csv",
+  respuestas: "https://raw.githubusercontent.com/proyectiapreu/recopilacion2026II/refs/heads/main/data/respuestas_estudiantes.csv",
+  cohorte: "https://raw.githubusercontent.com/proyectiapreu/recopilacion2026II/refs/heads/main/data/cohorte_ficticia.csv"
 };
 
 let preguntas = [];
