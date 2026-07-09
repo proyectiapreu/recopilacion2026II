@@ -1,0 +1,6 @@
+codigo,simulacro,total_aciertos,puntaje_estimado,percentil_cohorte_ficticia,nivel_estimado,Temática común_aciertos,Temática común_errores,Temática común_puntaje_area,Matemáticas_aciertos,Matemáticas_errores,Matemáticas_puntaje_area,Ciencias Naturales_aciertos,Ciencias Naturales_errores,Ciencias Naturales_puntaje_area,Sociales y Ciudadanas_aciertos,Sociales y Ciudadanas_errores,Sociales y Ciudadanas_puntaje_area,Análisis de Imagen_aciertos,Análisis de Imagen_errores,Análisis de Imagen_puntaje_area,area_mas_debil,area_mas_fuerte
+PRY-001,Recopilación Proyectia 2026-II,87,629,90,desempeño alto,32,8,11.49,13,7,10.5,14,6,10.78,15,5,11.0,13,7,10.47,Análisis de Imagen,Temática común
+PRY-002,Recopilación Proyectia 2026-II,60,444,31,desempeño medio-bajo,16,24,8.9,11,9,9.91,10,10,9.62,13,7,10.43,10,10,9.62,Temática común,Sociales y Ciudadanas
+PRY-003,Recopilación Proyectia 2026-II,60,444,31,desempeño medio-bajo,18,22,9.23,10,10,9.61,12,8,10.2,12,8,10.15,8,12,9.05,Análisis de Imagen,Ciencias Naturales
+PRY-004,Recopilación Proyectia 2026-II,87,629,90,desempeño alto,31,9,11.33,14,6,10.79,14,6,10.78,13,7,10.43,15,5,11.04,Sociales y Ciudadanas,Temática común
+PRY-005,Recopilación Proyectia 2026-II,44,334,5,desempeño bajo,14,26,8.58,5,15,8.14,8,12,9.05,9,11,9.3,8,12,9.05,Matemáticas,Sociales y Ciudadanas
