@@ -1,7 +1,9 @@
+const BASE_URL = "https://raw.githubusercontent.com/proyectiapreu/recopilacion2026II/refs/heads/main/data/";
+
 const DATA_PATHS = {
-  preguntas: "https://raw.githubusercontent.com/proyectiapreu/recopilacion2026II/refs/heads/main/data/preguntas.csv",
-  respuestas: "https://raw.githubusercontent.com/proyectiapreu/recopilacion2026II/refs/heads/main/data/respuestas_estudiantes.csv",
-  cohorte: "https://raw.githubusercontent.com/proyectiapreu/recopilacion2026II/refs/heads/main/data/cohorte_ficticia.csv"
+  preguntas: BASE_URL + "preguntas.csv",
+  respuestas: BASE_URL + "respuestas_estudiantes.csv",
+  cohorte: BASE_URL + "cohorte_ficticia.csv"
 };
 
 let preguntas = [];
