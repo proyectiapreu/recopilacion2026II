@@ -73,6 +73,18 @@ function renderTabla(detalle) {
   });
 }
 
+function renderNaturalSubareas(detalle, contenedor) {
+  const subareas = ['Física', 'Química', 'Biología'];
+  const html = subareas.map(sa => {
+    const total = detalle.filter(d => d.area === 'Ciencias naturales' && d.subarea === sa).length;
+    if (!total) return '';
+    const aciertos = detalle.filter(d => d.area === 'Ciencias naturales' && d.subarea === sa && d.ok).length;
+    const pct = Math.round((aciertos / total) * 100);
+    return `<span class="subarea-chip">${sa}: ${aciertos}/${total} (${pct}%)</span>`;
+  }).filter(Boolean).join('');
+  if (html) contenedor.insertAdjacentHTML('beforeend', `<div class="subarea-panel"><strong>Ciencias naturales por subárea</strong><div>${html}</div></div>`);
+}
+
 function buscar() {
   const code = normalizarId(getEl('codigo').value);
   const estado = getEl('estado');
