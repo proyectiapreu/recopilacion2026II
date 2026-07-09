@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectia | Resultado de simulacro UNAL</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="brand">
+        <div class="brand-mark">P</div>
+        <div>
+          <div class="brand-name">Proyectia</div>
+          <div class="brand-subtitle">Preuniversitario UNAL</div>
+        </div>
+      </div>
+      <a class="nav-link" href="#consulta">Consultar resultado</a>
+    </nav>
+
+    <section class="hero-content">
+      <div class="hero-text">
+        <span class="eyebrow">Evaluación diagnóstica</span>
+        <h1>Consulta tu resultado estimado del simulacro</h1>
+        <p>
+          Ingresa tu código de consulta para ver tu puntaje estimado, desempeño por áreas,
+          preguntas correctas e incorrectas, y recomendaciones inmediatas de mejora.
+        </p>
+        <div class="notice">
+          Resultado estimado mediante una simulación psicométrica propia de Proyectia,
+          inspirada en la escala pública de reporte de la Universidad Nacional. No corresponde
+          a un resultado oficial de admisión.
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="score-preview">612</div>
+        <div class="score-label">Ejemplo de puntaje estimado</div>
+        <div class="mini-bars">
+          <span style="height:52%"></span>
+          <span style="height:68%"></span>
+          <span style="height:76%"></span>
+          <span style="height:86%"></span>
+          <span style="height:58%"></span>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="consulta" class="search-panel">
+      <div class="panel-title">
+        <h2>Consulta individual</h2>
+        <p>Prueba con los códigos de ejemplo: <strong>PRY-001</strong>, <strong>PRY-002</strong>, <strong>PRY-003</strong>.</p>
+      </div>
+      <form id="searchForm" class="search-form">
+        <input id="studentCode" type="text" placeholder="Escribe tu código" autocomplete="off" />
+        <button type="submit">Consultar</button>
+      </form>
+      <div id="message" class="message hidden"></div>
+    </section>
+
+    <section id="results" class="results hidden">
+      <div class="summary-grid">
+        <article class="summary-card primary">
+          <span class="card-label">Puntaje estimado</span>
+          <strong id="totalScore">---</strong>
+          <span id="percentileText">---</span>
+        </article>
+        <article class="summary-card">
+          <span class="card-label">Aciertos totales</span>
+          <strong id="totalCorrect">---</strong>
+          <span id="totalQuestions">---</span>
+        </article>
+        <article class="summary-card">
+          <span class="card-label">Área más fuerte</span>
+          <strong id="bestArea">---</strong>
+          <span>Mayor desempeño relativo</span>
+        </article>
+        <article class="summary-card warning">
+          <span class="card-label">Área prioritaria</span>
+          <strong id="weakArea">---</strong>
+          <span>Primer foco de estudio</span>
+        </article>
+      </div>
+
+      <section class="two-column">
+        <article class="report-card">
+          <h3>Desempeño por áreas</h3>
+          <canvas id="areaChart" height="220"></canvas>
+        </article>
+        <article class="report-card">
+          <h3>Reporte rápido de mejora</h3>
+          <div id="feedback" class="feedback"></div>
+        </article>
+      </section>
+
+      <section class="report-card">
+        <div class="table-header">
+          <h3>Detalle pregunta por pregunta</h3>
+          <p>Cuando una respuesta es incorrecta, se muestra la clave correcta.</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Pregunta</th>
+                <th>Área</th>
+                <th>Tipo</th>
+                <th>Tema</th>
+                <th>Tu respuesta</th>
+                <th>Resultado</th>
+                <th>Correcta</th>
+              </tr>
+            </thead>
+            <tbody id="questionTable"></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyectia · Simulacros y preparación para la Universidad Nacional</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
