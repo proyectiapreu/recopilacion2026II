@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resultados Recopilación Proyectia 2026-II</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar">
+      <div class="brand"><img src="assets/logo-proyectia.png" alt="Logo Proyectia"><span>PROYECTIA</span></div>
+      <a class="small-link" href="data/preguntas.csv">Base de preguntas</a>
+    </nav>
+    <section class="hero-content">
+      <div>
+        <p class="eyebrow">Recopilación Examen de Admisión 2026-II</p>
+        <h1>Consulta tu resultado estimado</h1>
+        <p class="lead">Ingresa tu código para ver puntaje estimado, desempeño por área, temas prioritarios y detalle pregunta por pregunta.</p>
+        <div class="search-card">
+          <input id="codigo" placeholder="Ejemplo: PRY-001" autocomplete="off">
+          <button id="buscar">Consultar resultado</button>
+        </div>
+        <p class="hint">Códigos de prueba: <b>PRY-001</b>, <b>PRY-002</b>, <b>PRY-003</b>, <b>PRY-004</b>, <b>PRY-005</b>.</p>
+      </div>
+      <div class="hero-logo"><img src="assets/logo-proyectia.png" alt="Logo Proyectia grande"></div>
+    </section>
+  </header>
+
+  <main class="container">
+    <section id="estado" class="notice">Carga los datos y escribe un código para generar el reporte.</section>
+
+    <section id="reporte" class="hidden">
+      <div class="grid summary-grid">
+        <article class="card score-card">
+          <span class="label">Puntaje global estimado</span>
+          <strong id="puntajeTotal">—</strong>
+          <p id="percentil">—</p>
+        </article>
+        <article class="card">
+          <span class="label">Aciertos totales</span>
+          <strong id="aciertosTotal">—</strong>
+          <p id="nivelGlobal">—</p>
+        </article>
+        <article class="card">
+          <span class="label">Área prioritaria</span>
+          <strong id="areaDebil">—</strong>
+          <p>La retroalimentación se calcula desde tus errores por área, tema y tipo.</p>
+        </article>
+      </div>
+
+      <section class="card wide">
+        <div class="section-title"><h2>Desempeño por área</h2><span>Escala estimada tipo 10 ± 1</span></div>
+        <div id="areas"></div>
+      </section>
+
+      <section class="grid two">
+        <article class="card">
+          <h2>Qué mejorar primero</h2>
+          <ul id="mejoras"></ul>
+        </article>
+        <article class="card">
+          <h2>Lectura rápida del resultado</h2>
+          <p id="diagnostico"></p>
+          <p class="method-note">Modelo de reporte: cohorte ficticia normativa + transformación estandarizada. No es resultado oficial de admisión.</p>
+        </article>
+      </section>
+
+      <section class="card wide">
+        <div class="section-title"><h2>Detalle por pregunta</h2><input id="filtro" placeholder="Filtrar por área, tema o incorrecta"></div>
+        <div class="table-wrap"><table id="tabla"><thead><tr><th>#</th><th>Área</th><th>Tema</th><th>Tu respuesta</th><th>Resultado</th><th>Correcta</th></tr></thead><tbody></tbody></table></div>
+      </section>
+    </section>
+  </main>
+
+  <footer>Proyectia Preuniversitario · Resultado estimado para uso pedagógico.</footer>
+  <script src="app.js"></script>
+</body>
+</html>
