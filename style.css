@@ -24,3 +24,7 @@
 .area-score small{display:block;color:#75697b;font-size:.66rem;text-transform:uppercase;letter-spacing:.8px;line-height:1.1;margin-bottom:2px}
 .method-note strong{color:#351046}
 @media(max-width:850px){.area-row{grid-template-columns:1fr}.area-unalscore,.area-score{text-align:left;width:max-content}}
+
+.science-subareas {
+  display: none !important;
+}
