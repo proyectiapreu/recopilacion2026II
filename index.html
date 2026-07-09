@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resultados Recopilación Proyectia 2026-II</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar">
+      <div class="brand"><img src="assets/logo-proyectia.png" alt="Logo Proyectia"><span>PROYECTIA</span></div>
+    </nav>
+    <section class="hero-content">
+      <div>
+        <p class="eyebrow">Recopilación Examen de Admisión 2026-II</p>
+        <h1>Consulta tu resultado estimado</h1>
+        <p class="lead">Ingresa el número de documento de identidad que registraste al presentar el simulacro para ver tu puntaje estimado, desempeño por área, temas prioritarios y detalle pregunta por pregunta.</p>
+        <div class="search-card">
+          <input id="codigo" placeholder="Número de documento de identidad" autocomplete="off" inputmode="numeric">
+          <button id="buscar">Consultar resultado</button>
+        </div>
+      </div>
+      <div class="hero-logo"><img src="assets/logo-proyectia.png" alt="Logo Proyectia grande"></div>
+    </section>
+  </header>
+
+  <main class="container">
+    <section id="estado" class="notice">Ingresa tu número de documento de identidad para consultar el reporte.</section>
+
+    <section id="reporte" class="hidden">
+      <div class="grid summary-grid">
+        <article class="card score-card">
+          <span class="label">Puntaje global estimado</span>
+          <strong id="puntajeTotal">—</strong>
+          <p id="percentil">—</p>
+        </article>
+        <article class="card aciertos-card">
+          <span class="label">Aciertos totales</span>
+          <strong id="aciertosTotal">—</strong>
+          <p id="nivelGlobal" class="nivel-badge">—</p>
+        </article>
+        <article class="card">
+          <span class="label">Área prioritaria</span>
+          <strong id="areaDebil">—</strong>
+          <p>La retroalimentación se calcula desde tus errores por área</p>
+        </article>
+      </div>
+
+      <section class="card wide">
+        <div class="section-title"><h2>Desempeño por área</h2></div>
+        <div id="areas"></div>
+      </section>
+
+
+
+      <section class="preunal-cta" aria-label="Inscripción PreUNAL Proyectia">
+        <div>
+          <span>Convierte este resultado en un plan de preparación</span>
+          <strong>Inscríbete en nuestro PreUNAL</strong>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScTS2tK3FG7hsLIgsh9g7CSE81Yql0fLYq3TBjXUt5ZbkAHag/viewform" target="_blank" rel="noopener">Inscríbete ahora</a>
+      </section>
+
+      <section class="grid two">
+        <article class="card">
+          <h2>Qué mejorar primero</h2>
+          <ul id="mejoras"></ul>
+        </article>
+        <article class="card">
+          <h2>Lectura rápida del resultado</h2>
+          <p id="diagnostico"></p>
+          <p class="method-note">Este reporte es una estimación pedagógica para orientar la preparación. No corresponde a un resultado oficial de admisión.</p>
+        </article>
+      </section>
+
+      <section class="card wide">
+        <div class="section-title detail-title">
+          <h2>Detalle por pregunta</h2>
+          <label class="filter-label" for="filtroArea">
+            Filtrar por área
+            <select id="filtroArea">
+              <option value="todas">Todas las áreas</option>
+              <option value="Análisis textual">Análisis textual</option>
+              <option value="Matemáticas">Matemáticas</option>
+              <option value="Ciencias naturales">Ciencias naturales</option>
+              <option value="Ciencias sociales">Ciencias sociales</option>
+              <option value="Análisis de imagen">Análisis de imagen</option>
+            </select>
+          </label>
+        </div>
+        <div class="table-wrap"><table id="tabla"><thead><tr><th>#</th><th>Área</th><th>Tema</th><th>Tu respuesta</th><th>Resultado</th><th>Correcta</th></tr></thead><tbody></tbody></table></div>
+      </section>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="footer-strip">
+      <span><b>Proyectia</b> te ayuda a convertir estos datos en una meta de preparación.</span>
+      <strong>¡Creemos en tu proyecto!</strong>
+    </div>
+
+    <section class="connect-card" aria-label="Conecta con Proyectia">
+      <div class="connect-copy">
+        <h2>Conecta con Proyectia</h2>
+        <p>Síguenos, revisa toda la información del PreUNAL y entra a nuestro canal de WhatsApp para recibir novedades.</p>
+        <p class="whatsapp-line">WhatsApp: <a href="https://wa.me/573224605812" target="_blank" rel="noopener">322 460 5812</a></p>
+      </div>
+
+      <div class="social-grid">
+        <a class="social-button" href="https://www.instagram.com/proyectiapreu" target="_blank" rel="noopener" aria-label="Instagram Proyectia">
+          <span class="social-icon instagram-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="4"></rect><circle cx="12" cy="12" r="3.2"></circle><circle cx="16.7" cy="7.3" r=".9"></circle></svg>
+          </span>
+          Instagram
+        </a>
+        <a class="social-button" href="https://linktr.ee/proyectiapreu" target="_blank" rel="noopener" aria-label="Linktree Proyectia">
+          <span class="social-icon linktree-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 4v16"></path><path d="M8 7l4-4 4 4"></path><path d="M7 11l5-5 5 5"></path><path d="M8 15l4-4 4 4"></path></svg>
+          </span>
+          Linktree
+        </a>
+        <a class="social-button" href="https://www.tiktok.com/@proyectiapreu" target="_blank" rel="noopener" aria-label="TikTok Proyectia">
+          <span class="social-icon tiktok-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M14 4v9.2a4.2 4.2 0 1 1-4.2-4.2"></path><path d="M14 4c.6 3.2 2.4 5 5 5.3"></path></svg>
+          </span>
+          TikTok
+        </a>
+        <a class="social-button" href="https://wa.me/573224605812" target="_blank" rel="noopener" aria-label="Canal WhatsApp Proyectia">
+          <span class="social-icon whatsapp-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M5.5 18.5l.9-3A7 7 0 1 1 9 18.1z"></path><path d="M9.2 8.7c.2 3 2.1 5 5 5.9l1.1-1.3"></path></svg>
+          </span>
+          Canal WhatsApp
+        </a>
+      </div>
+    </section>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

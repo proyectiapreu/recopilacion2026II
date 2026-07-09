@@ -1,0 +1,6 @@
+documento,total_aciertos,puntaje_global,aciertos_analisis_textual,puntaje_analisis_textual,aciertos_matematicas,puntaje_matematicas,aciertos_ciencias_naturales,puntaje_ciencias_naturales,aciertos_ciencias_sociales,puntaje_ciencias_sociales,aciertos_analisis_imagen,puntaje_analisis_imagen,aciertos_fisica,aciertos_quimica,aciertos_biologia
+1000000001,67,525.38,16,10.32,13,10.46,10,9.76,16,10.35,12,10.22,6,2,2
+1000000002,64,512.04,12,9.57,13,10.46,13,10.32,13,9.79,13,10.45,8,1,4
+1000000003,44,423.06,9,9.0,12,10.27,5,8.82,9,9.03,9,9.53,3,1,1
+1000000004,53,463.1,14,9.94,11,10.09,7,9.2,14,9.98,7,9.08,4,1,2
+1000000005,70,538.73,19,10.88,13,10.46,9,9.57,15,10.16,14,10.68,7,2,0
