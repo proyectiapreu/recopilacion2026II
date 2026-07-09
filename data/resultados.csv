@@ -1,6 +1,0 @@
-documento,simulacro,total_aciertos,puntaje_estimado,percentil_referencia,area_mas_debil,area_mas_fuerte,aciertos_analisis_textual,errores_analisis_textual,aciertos_matematicas,errores_matematicas,aciertos_ciencias_naturales,errores_ciencias_naturales,aciertos_ciencias_sociales,errores_ciencias_sociales,aciertos_analisis_imagen,errores_analisis_imagen
-1000000001,Recopilación Proyectia 2026-II,42,305,3,Análisis de imagen,Análisis textual,19,6,6,19,7,18,10,15,0,20
-1000000002,Recopilación Proyectia 2026-II,39,279,1,Matemáticas,Análisis textual,12,13,6,19,8,17,6,19,7,13
-1000000003,Recopilación Proyectia 2026-II,37,261,1,Matemáticas,Análisis textual,12,13,5,20,7,18,9,16,4,16
-1000000004,Recopilación Proyectia 2026-II,38,270,1,Análisis de imagen,Análisis textual,17,8,3,22,7,18,9,16,2,18
-1000000005,Recopilación Proyectia 2026-II,36,252,1,Análisis de imagen,Análisis textual,10,15,9,16,6,19,7,18,4,16
